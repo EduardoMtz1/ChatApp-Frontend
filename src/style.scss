@@ -1,0 +1,58 @@
+ .formContainer {
+    background-color: #9b8ad4;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .formWrapper {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+        padding: 20px 60px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+
+        .chatAppName {
+            color: #685ad6;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .title {
+            color: #685ad6;
+            font-size: 12px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            input {
+                padding: 15px;
+                border: none;
+                width: 250px;
+                border-bottom: 1px solid #9b84f5;
+            }
+
+            button {
+                background-color: #685ad6;
+                color: white;
+                font-weight: bold;
+                border-radius: 5px;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+            }
+        }
+
+        p {
+            color: #685ad6;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+    }
+ }
