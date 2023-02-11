@@ -55,7 +55,7 @@ export const Register = () => {
                 <input type="text" placeholder='Username'/>
                 <input type="password" placeholder='Password'/>
                 <button>Sign up!</button>
-                {err && <span>Username or password are wrong, try again</span>}
+                {err && <span>Something went wrong, try again later</span>}
              </form>
              <p>Already have an account? <Link to="/login">Login here!</Link></p>
         </div>
