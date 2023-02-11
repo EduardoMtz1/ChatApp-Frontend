@@ -18,7 +18,7 @@ export const Register = () => {
     e.preventDefault();
     const username = e.target[0].value;
     const password = e.target[1].value;
-    const chatroomId = chatroom.chatroom.chatroomId
+    const chatroomId = chatroom.chatroom.id
 
     try{
       await createUser(username, password, chatroomId).then((res) => {
