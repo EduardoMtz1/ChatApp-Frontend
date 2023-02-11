@@ -1,30 +1,15 @@
-import React from 'react';
-import UserIcon from "../img/user.png"
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { addUserToChatlist } from '../actions';
+import { ChatUser } from './ChatUser';
 
 export const Chatlist = () => {
+  const chatlist = useSelector(state => state.chatlist)
   return (
     <div className='chatlist'>
-      <div className='userChat'>
-        <img src={UserIcon} alt=""/>
-        <div className='userChatInfo'>
-          <span>Username</span>
-          <p>Message</p>
-        </div>
-      </div>
-      <div className='userChat'>
-        <img src={UserIcon} alt = ""/>
-        <div className='userChatInfo'>
-          <span>Username</span>
-          <p>Message</p>
-        </div>
-      </div>
-      <div className='userChat'>
-        <img src={UserIcon} alt = ""/>
-        <div className='userChatInfo'>
-          <span>Username</span>
-          <p>Message</p>
-        </div>
-      </div>
+      {chatlist.map((chatuser) => 
+        <ChatUser user={chatuser}/>
+      )}
     </div>
   )
 }
